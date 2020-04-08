@@ -1,0 +1,11 @@
+applications:
+- name: go-http-server
+  buildpacks:
+  - binary_buildpack
+  command: ./server
+  disk_quota: 1G
+  instances: 1
+  memory: 8M
+  routes:
+  - route: go-http-server.cfapps.io
+  stack: cflinuxfs3

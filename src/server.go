@@ -8,6 +8,7 @@ import(
 
 func main() {
 	http.HandleFunc("/", handler)
+	http.HandleFunc("/data", handler)
 	log.Fatal(http.ListenAndServe("0.0.0.0:8080",nil))
 }
 
